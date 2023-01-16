@@ -11,7 +11,7 @@ Before we run the project, make sure that you are having MongoDB in your local s
 
 ### Step 1-: Clone the Repository
 ```
-git clone https://github.com/Deep-Learning-01/Deep-Authenticator.git
+git clone https://github.com/iftesha1/Deep_Biometric_Authenticator.git
 ```
 
 ### Step 2-: Creat conda environment
