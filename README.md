@@ -58,23 +58,3 @@ MONGODB_URL_KEY=
 python app.py
 ```
 
-## Run Locally
-
-### Build the Docker Image
-```
-docker build -t face_auth --build-arg SECRET_KEY=<SECRET_KEY> --build-arg ALGORITHM=<ALGORITHM> --build-arg MONGODB_URL_KEY=<MONGODB_URL_KEY> --build-arg DATABASE_NAME=<DATABASE_NAME> --build-arg USER_COLLECTION_NAME=<USER_COLLECTION_NAME> --build-arg EMBEDDING_COLLECTION_NAME=<EMBEDDING_COLLECTION_NAME> . 
-```
-
-### Run the Docker Image
-
-```
-docker run -d -p 8000:8000 <IMAGEID OR IMAGENAME>
-```
-## Deployment to Azure
-
-### Services used
-- Azure container Registry (ACR) for Docker image of project is stored
-- Azure App Services for deploying the application
-- GitHub Actions for CI/CD
-
-#### Please refer this [documentation](https://github.com/Rishav-hub/face_auth_dev/blob/main/docs/setup.md) for deployment to Azure.
